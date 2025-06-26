@@ -1,0 +1,54 @@
+/* 
+Block element:
+
+    - take up the full width of their parent container
+    - line breaks added before and after themselves
+    - support width, height, margin and padding properties
+*/
+
+/* 
+Inline element:
+
+    - take up only as much width as necessary
+    - line breaks are not added before or after them
+    - support only margin and padding properties on the left and right sides
+    - cannot have width and height properties set
+*/
+
+/* 
+Inline-Block element:
+
+    - take up the full width of their parent container
+    - line breaks are not added before or after them
+    - support width, height, margin and padding properties
+*/
+
+div{
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    margin: 4px;
+    height: 70px;
+    /* default value */
+    display: block; 
+    /* for make hidden but the area still taken */
+    visibility: hidden;
+    visibility: visible;
+}
+
+span{
+    background-color: lightblue;
+    padding: 30px;
+    /* for make hidden and  the area still not taken */
+    display: none; 
+    /* default value */
+    display: inline; 
+}
+
+.inline-block-element{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+
+}
